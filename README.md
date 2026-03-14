@@ -1,69 +1,95 @@
-Turma: 3ª
+# 🪓 Jogo da Forca Java (Versão Ultra-Moderna 2026)
 
-Aluno: Ana Alice Gomes Soares - Número: 1
+Bem-vindo à evolução definitiva do clássico **Jogo da Forca**. Este projeto foi completamente refatorado para atingir o estado da arte do desenvolvimento Java em 2026, combinando segurança, performance e uma experiência de usuário (UX) excepcional.
 
-Aluno: Arthur Alves de Souza Costa - Número: 3
+---
 
-Como rodar o programa:
+## 🚀 Destaques Tecnológicos (Stack 2026)
 
-> Como rodar no Eclipse
+Este projeto não é apenas um jogo; é um exemplo de engenharia de software moderna:
 
-1. Baixe o arquivo .zip e extraia ele para uma pasta
+- **Java Platform Module System (JPMS)**: 100% modularizado para encapsulamento forte e segurança.
+- **Java 25 (LTS) Support**: Utiliza os recursos mais recentes como `Records`, `Switch Expressions`, `RandomGenerator API` e `Sequenced Collections`.
+- **NIO.2 File System**: Manipulação de arquivos moderna e segura contra ataques de *Path Traversal*.
+- **Swing Thread-Safety**: Interface gráfica robusta processada na *Event Dispatch Thread (EDT)* via `SwingUtilities.invokeLater`.
+- **Zero Dependências Externas**: Código purista, utilizando apenas APIs nativas da JDK para máxima portabilidade.
 
-2. Abra o Eclipse e importe o pacote
+---
 
-    2.1. Vá em File > Import > General > Projects from Folder or Archive
-    
-    2.2. Clique em Finish
-    
-    2.3. Clique em Directory e selecione a pasta root (pasta onde está o Main.java)
+## 🎨 Experiência do Usuário (UX)
 
-3. Compile e rode o programa
+- **🌑 Modo Escuro (Dark Mode)**: Interface visual moderna com paleta grafite e azul destaque, pensada para o conforto visual.
+- **⌨️ Teclado Físico (Agilidade)**: Suporte total para digitação direta. O sistema identifica as teclas pressionadas e as sincroniza com o teclado virtual.
+- **⏱️ Cronômetro em Tempo Real**: Desafie-se a resolver a forca no menor tempo possível.
+- **🏆 Sistema de Recordes**: Persistência de dados para salvar e exibir o seu melhor tempo histórico.
+- **🌍 Consciência de Localização**: O jogo identifica automaticamente o seu país, idioma e horário para saudações personalizadas.
 
-    3.1. Abra o arquivo Main.java na pasta root, clique com o botão direito, vá em Run as > Java Application
+---
 
-OBS: o projeto não foi codificado no Eclipse, então se houver algum erro de compatibilidade, siga os passos abaixo
+## 🛡️ Segurança e Robustez
 
-> Como rodar no terminal
+O código foi auditado para garantir:
 
-1. Baixe o arquivo .zip e extraia ele para uma pasta
+1. **Proteção de I/O**: Verificação de integridade de caminhos absolutos no carregamento de palavras e dicas.
+2. **Imutabilidade**: Uso de `List.copyOf` para evitar efeitos colaterais na lógica de jogo.
+3. **Escaneamento de Erros**: Tratamento rigoroso de exceções de áudio e sistema de arquivos.
 
-2. Abra um terminal de sua preferência (ex: CMD, Bash, Powershell)
-    OBS: o terminal precisa ter permissão para executar código. Se o terminal em que você estiver
-    não for autorizado, abra-o como Administrador
+---
 
-3. Navegue para o diretório root, para onde você extraiu os arquivos (pasta onde está o Main.java)
+## 📂 Estrutura Modular do Projeto
 
-    Considere que você abriu o terminal no diretório C:\Users\SeuUsuario
-    e que você extraiu a pasta do arquivo .zip para a sua área de trabalho
-
-    Comando: 
-    
-    ``` shell
-    cd Desktop/jogo-da-forca
-    ```
-
-4. Compile o código com o comando:  
-
-``` shell
-javac Main.java
+```text
+src/
+└── hangman/
+    ├── module-info.java        # Definição do módulo
+    └── hangman/
+        ├── Main.java           # Ponto de entrada e i18n
+        ├── logic/              # Lógica core do jogo
+        ├── ui/                 # Interface Gráfica e UX
+        └── util/               # I/O, Som e Recordes
 ```
 
-5. Execute o programa com o comando: java Main
+---
 
-    OBS: certifique-se de ter uma versão igual compatível com a versão que utilizamos: jdk-11.0.11.9-hotspot
-        certifique-se de que o Java esteja acessível nas suas variáveis de ambiente
+## 🎮 Como Jogar
 
-    Se a compilação resultar em um erro: 
-    
-    ``` shell
-    'javac' is not recognized as an internal or external command
-    ```
-    
-    ou 
-    
-    ``` shell
-    'java' is not recognized as an internal or external command
-    ```
+Certifique-se de ter o **JDK 25** instalado no seu sistema.
 
-    veja o artigo: https://confluence.atlassian.com/confbr1/configurando-a-variavel-java_home-no-windows-933709538.html
+### 🍎 No macOS / 🐧 No Linux:
+
+1. Dê permissão de execução ao script:
+
+   ```bash
+   chmod +x jogar.sh
+   ```
+
+2. Inicie o jogo:
+
+   ```bash
+   ./jogar.sh
+   ```
+
+### 🪟 No Windows
+
+Basta clicar duas vezes no arquivo ou rodar via terminal:
+
+```cmd
+jogar.bat
+```
+
+---
+
+## 👥 Créditos
+
+**Autores Originais:**
+
+- Ana Alice Gomes Soares
+- Arthur Alves de Souza Costa
+
+**Refatoração e Modernização (2026):**
+
+- Realizada via **Gemini CLI (Google)** para transformar um projeto educacional em uma aplicação modular de alta performance.
+
+---
+
+*© 2026 - Desenvolvido com foco em excelência técnica e diversão.*
